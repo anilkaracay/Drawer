@@ -9,16 +9,16 @@ export default class App extends Component {
   }
 
   render() {
-    var drawerContent = (<View style={styles.drawerContent}>
+    const drawerContent = (<View style={styles.drawerContent}>
       <View style={styles.leftTop}/>
       <View style={styles.leftBottom}>
-        <View style={{borderBottomWidth:1,borderColor:'rgb(247,247,247)'}}>
-          <Text style={{fontSize:16,marginLeft:21,marginVertical:22,}}>Filtrele</Text>
+        <View style={{borderBottomWidth: 1, borderColor: 'rgb(247,247,247)'}}>
+          <Text style={{fontSize: 16, marginLeft: 21, marginVertical: 22,}}>Filtrele</Text>
         </View>
       </View>
     </View>);
 
-    var customStyles = {
+    const customStyles = {
       drawer: {
         shadowColor: '#000',
         shadowOpacity: 0.4,
@@ -45,8 +45,8 @@ export default class App extends Component {
         easingFunc={Easing.ease}
       >
         <View style={styles.content}>
-          <TouchableOpacity onPress={()=>this._drawer.openRightDrawer()}>
-            <Text style={{fontSize:45}}>
+          <TouchableOpacity onPress={() => this._drawer.openRightDrawer()}>
+            <Text style={{fontSize: 45}}>
               Drawer
             </Text>
           </TouchableOpacity>
@@ -58,7 +58,7 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   drawerContent: {
     flex: 1,
-    backgroundColor:'rgb(255,255,255)'
+    backgroundColor: 'rgb(255,255,255)'
   },
 
 });
